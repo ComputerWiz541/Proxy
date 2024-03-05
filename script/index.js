@@ -31,7 +31,7 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.`);
 
-if(['netlify.app', 'vercel.app', 'github.io', 'gitlab.io', 'pages.dev'].filter(host => window.location.hostname.includes(host)).length) throw alert(`You cannot deploy to ${window.location.hostname}. Did you read the notice before deploying?`);
+if(['netlify.app', 'vercel.app', 'gitlab.io', 'pages.dev'].filter(host => window.location.hostname.includes(host)).length) throw alert(`You cannot deploy to ${window.location.hostname}. Did you read the notice before deploying?`);
 
 import { App } from './app.js';
 import { gs } from './gs.js';
